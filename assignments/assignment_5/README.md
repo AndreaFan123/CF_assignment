@@ -100,8 +100,8 @@ function GrandchildComponent() {
   const { name, age } = userContext ?? defaultValue;
   return (
     <div>
-      <p>Name: {name}</p>
-      <p>Age: {age}</p>
+      {name && <p>Name: {name}</p>}
+      {age && <p>Age: {age}</p>}
     </div>
   );
 }
